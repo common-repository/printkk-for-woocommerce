@@ -1,0 +1,180 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.printkk-base-box {
+    width: 98%;
+    margin: 0 auto;
+}
+.printkk-logo{
+    width: 134px;
+    margin-top: 20px;
+}
+.printkk-statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.printkk-statistics-orders, .printkk-statistics-products {
+    background: #fff;
+    width: auto;
+    padding: 10px 10px 30px 10px;
+    height: 100%;
+}
+.printkk-statistics-title {
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 600;
+}
+.printkk-statistics-orders {
+    width: 60%;
+}
+.printkk-statistics-products {
+    width: 35%;
+}
+.printkk-statistics-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.printkk-statistics-content-item-number {
+    color: #01126C;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.printkk-statistics-content-item-words{
+    text-align: center;
+    font-size: 14px;
+}
+.printkk-statistics-content-item-words span {
+    font-weight: 600;
+}
+.printkk-title {
+    position: relative;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 25px;
+    line-height: 25px;
+}
+.printkk-title .tips{
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+    cursor: context-menu;
+    width: 15px;
+    height: 15px;
+    left: 5px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.52);
+}
+.printkk-title .tips-message {
+    position: absolute;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    top: 20px;
+    background: rgba(0,0,0,0.72);
+    display: none;
+}
+.printkk-title .tips:hover ~ .tips-message {
+    display: block;
+}
+.printkk-orders {
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 10px 30px 10px 30px;
+}
+.printkk-orders thead tr{
+    border-bottom: 1px solid #ddd;
+}
+.printkk-orders th {
+    text-align: left;
+}
+.printkk-orders tr {
+    height: 30px;
+    line-height: 30px;
+}
+.printkk-quick-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.printkk-quick-links-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.printkk-quick-links-item-content {
+    position: relative;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+}
+.printkk-quick-links-item-content img{
+    width: 40px;
+    margin: 0px auto;
+}
+.printkk-quick-links-item-title {
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
+.printkk_connect_content {
+    width: 50%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 5%;
+}
+.printkk_connect-img {
+    display: block;
+    min-width: 300px;
+    width: 100%;
+    margin: 0px auto;
+}
+.printkk_connect_content a {
+    display: block;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: #01126C;
+    text-decoration: none;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.printkk_connect_content a:hover {
+    background: #0a4b78;
+}
+@media (max-width: 980px) {
+    .printkk-statistics {
+        display: block;
+        height: auto;
+    }
+    .printkk-statistics-orders {
+        width: 100%;
+    }
+    .printkk-statistics-products {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
